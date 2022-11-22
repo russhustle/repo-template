@@ -1,0 +1,7 @@
+name: template
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip=21.1.3
