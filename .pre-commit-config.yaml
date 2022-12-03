@@ -1,7 +1,7 @@
 repos:
 # a set of useful Python-based pre-commit hooks
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
+    rev: v4.4.0
     hooks:
       # supported hooks: https://pre-commit.com/hooks.html
     - id: trailing-whitespace
@@ -19,8 +19,8 @@ repos:
     rev: 22.10.0
     hooks:
     - id: black
--   repo: https://gitlab.com/pycqa/flake8
-    rev: 3.9.2
+-   repo: https://github.com/pycqa/flake8
+    rev: 6.0.0
     hooks:
     - id: flake8
 -   repo: https://github.com/timothycrosley/isort
