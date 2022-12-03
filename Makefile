@@ -4,6 +4,6 @@ conda-update:
 
 # dependenciesdes
 pip-tools:
-	pip install pip-tools==6.3.1 setuptools==59.5.0
+	pip install pip-tools==6.10.0 setuptools==65.6.2
 	pip-compile requirements/dev.in
 	pip-sync requirements/dev.txt
