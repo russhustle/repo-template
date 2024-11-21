@@ -1,9 +1,8 @@
-# make conda virtual env
-conda-update:
-	conda env update --prune -f environment.yml
+clean:
+	find . -name "__pycache__" -exec rm -rf {} \;
+	find . -name ".DS_Store" -exec rm -rf {} \;
 
-# dependenciesdes
-pip-tools:
-	pip install pip-tools==6.10.0 setuptools==65.6.2
-	pip-compile requirements/dev.in
-	pip-sync requirements/dev.txt
+pre-commit:
+	poetry run pre-commit autoupdate
+	poetry run pre-commit install
+	poetry run pre-commit run --all-files
