@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       # supported hooks: https://pre-commit.com/hooks.html
       - id: trailing-whitespace
@@ -19,11 +19,11 @@ repos:
     hooks:
       - id: black
   - repo: https://github.com/pycqa/flake8
-    rev: 7.1.1
+    rev: 7.3.0
     hooks:
       - id: flake8
   - repo: https://github.com/timothycrosley/isort
-    rev: 6.0.0
+    rev: 6.0.1
     hooks:
       - id: isort
   - repo: https://github.com/econchick/interrogate
@@ -34,6 +34,6 @@ repos:
 
   # shellcheck-py for linting shell files
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
+    rev: v0.11.0.1
     hooks:
       - id: shellcheck

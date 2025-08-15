@@ -1,26 +1,23 @@
-[tool.poetry]
+[project]
 name = "repo-template"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
-license = "MIT License"
+authors = [
+    {name = "russhustle", email = "you@example.com"}
+]
+license = {text = "MIT License"}
 readme = "README.md"
-package-mode = false
+requires-python = ">=3.11"
+dependencies = []
 
-[tool.poetry.dependencies]
-python = "^3.12"
-
-
-[tool.poetry.group.dev.dependencies]
-pre-commit = "^4.0.1"
-flake8 = "^7.1.1"
-black = "^24.10.0"
-isort = "^5.13.2"
-interrogate = "^1.7.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[project.optional-dependencies]
+dev = [
+    "pre-commit>=4.3.0",
+    "flake8>=7.3.0",
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "interrogate>=1.7.0",
+]
 
 [tool.black]
 line-length = 90
