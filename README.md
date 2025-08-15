@@ -18,14 +18,14 @@ uv run pre-commit run --all-files
 ## Development
 
 ```bash
-# Run formatting
-uv run black .
+# Run linting and formatting
+uv run ruff check --fix .
 
-# Run linting
-uv run flake8
+# Run formatting only
+uv run ruff format .
 
-# Run import sorting
-uv run isort .
+# Run linting only (without fixes)
+uv run ruff check .
 
 # Run docstring coverage check
 uv run interrogate .
